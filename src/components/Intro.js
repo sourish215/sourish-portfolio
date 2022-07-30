@@ -13,7 +13,7 @@ function Intro() {
         Hi there! I&apos;m 
       </Typography>
       <Typography variant={md ? 'h3' : 'h1'} fontWeight='bold' gutterBottom>
-        <Typed strings={["Sourish"]} typeSpeed={40} />
+        <Typed strings={["Sourish"]} typeSpeed={100} />
       </Typography>
       <Typography variant={md ? 'h4' : 'h3'} fontWeight='bold' gutterBottom>
         I&apos;m a Frontend Developer from Kolkata, India.

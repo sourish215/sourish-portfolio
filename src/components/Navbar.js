@@ -14,7 +14,7 @@ const Navbar = () => {
         padding: md ? '20px' : '15px 20px 15px 20px'
       }}>
         <Stack direction='row'>
-          <Typography variant='h4' ml={4} p={1}
+          <Typography variant='h4' ml={md ? 0 :4} p={1}
             sx={{ border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}
             align='center'
           >
