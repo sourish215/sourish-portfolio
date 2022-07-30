@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Stack, Box, Link, Grid } from '@mui/material';
-import SchoolIcon from '@mui/icons-material/School';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import TipsAndUpdatesOutlinedIcon from '@mui/icons-material/TipsAndUpdatesOutlined';
 import { useTheme } from '@mui/material/styles';
@@ -22,7 +22,7 @@ function Resume() {
         <Box component={Link} href='/' underline='none' p={md ? 2 : 6} sx={{ width: md ? 300 : 400, height: md ? 150 : 250, border: '2px solid black', borderRadius: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', '&:hover': { backgroundColor: '#71eeb8' } }}>
           <Typography align='center' variant={md ? 'h5' : 'h4'} fontWeight='bold' gutterBottom sx={{ color:'black', }}>
             Education<br /><br />
-            <SchoolIcon sx={{ fontSize: md ? '40px' : '90px' }} />
+            <SchoolOutlinedIcon sx={{ fontSize: md ? '40px' : '90px' }} />
           </Typography>
         </Box>
         <Box component={Link} href='/' underline='none' p={md ? 2 : 6} sx={{ width: md ? 300 : 400, height: md ? 150 : 250, border: '2px solid black', borderRadius: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', '&:hover': { backgroundColor: '#71eeb8' } }}>
