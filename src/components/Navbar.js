@@ -1,28 +1,30 @@
-import { AppBar, Typography, Stack, Link, Divider } from '@mui/material';
-import Image from 'next/image'
+import React, { useState } from 'react';
+import { AppBar, Typography, Stack, Link, Drawer, IconButton, List, ListItem, ListItemText } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Navbar = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.down('md'));
   return (
-    <AppBar elevation={0} position='static' color='transparent'
+    <AppBar position='sticky' elevation={0} color='primary'
       sx={{
         padding: md ? '20px' : '15px 20px 15px 20px'
       }}>
         <Stack direction='row'>
-          <Typography variant='h4' p={1}
-            sx={{ border: '2px solid black', borderRadius: '5px' }}
+          <Typography variant='h4' ml={4} p={1}
+            sx={{ border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}
             align='center'
-            gutterBottom
           >
             <Link href="/" underline='none' color='black'>
               sb.
             </Link>
           </Typography>
           
-          <Stack direction='row' spacing={6} sx={{  flexGrow: '1',justifyContent: 'flex-end', alignItems: 'center', paddingTop: md ? '10px' : '' }}>
+          {!md && 
+          <Stack direction='row' spacing={6} mr={4} sx={{  flexGrow: '1',justifyContent: 'flex-end', alignItems: 'center' }}>
             <Link variant='h6'
               href="/"
               underline='hover'   
@@ -72,7 +74,65 @@ const Navbar = () => {
                 }
                 }}
             >Contact</Link>
-          </Stack>
+          </Stack>}
+          {md && <IconButton
+            disableRipple
+            sx={{ flexGrow: '1', justifyContent: 'flex-end' }}
+            color="inherit"
+            aria-label="menu"
+            onClick={() => setIsDrawerOpen(true)}
+          >
+            <MenuIcon />
+          </IconButton>}
+
+          <Drawer open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}
+          PaperProps={{
+            sx: {
+              backgroundColor: "#303030",
+            }
+          }}
+          >
+            <List>
+              <ListItem button>
+                <Link variant='h6'
+                  href="/" 
+                  color='primary'
+                  underline='none'
+                  fontWeight='bold'
+                >Home</Link>
+              </ListItem>
+
+              <ListItem button>
+                <Link variant='h6'
+                  href="/projects"
+                  color='primary'
+                  underline='none'
+                  fontWeight='bold'
+                >Projects</Link>
+              </ListItem>
+
+              <ListItem button>
+                <Link variant='h6' href="/resume" color='primary'
+                  underline='none'
+                  fontWeight='bold'
+                >Resume</Link>
+              </ListItem>
+
+              <ListItem button>
+                <Link variant='h6' href="/about" color='primary'
+                  underline='none'
+                  fontWeight='bold'
+                >About</Link>
+              </ListItem>
+
+              <ListItem button>
+                <Link variant='h6' href="/contact" color='primary'
+                  underline='none'
+                  fontWeight='bold'
+                >Contact</Link>
+              </ListItem>
+            </List>
+          </Drawer>
         </Stack>
     </AppBar>
   );
