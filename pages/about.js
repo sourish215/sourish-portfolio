@@ -30,7 +30,7 @@ function About() {
           />
         </div>
         <Typography paragraph variant={md ? 'h6' : 'body1'} fontWeight='bold' gutterBottom sx={{ fontSize: '1.3rem' }}>
-          I&apos;m Sourish, a recent graduate from the M. Sc. Computer Science program at St. Xavier&apos;s College, Kolkata.
+          I&apos;m Sourish Bhattacharyya, a recent graduate from the M. Sc. Computer Science program at St. Xavier&apos;s College, Kolkata.
         </Typography>
         <Typography paragraph variant={md ? 'h6' : 'body1'} fontWeight='bold' gutterBottom sx={{ fontSize: '1.3rem' }}>
           I&apos;m currently looking for opportunities in frontend development.
