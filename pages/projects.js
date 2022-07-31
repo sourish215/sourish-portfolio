@@ -36,6 +36,16 @@ function Projects() {
         <Grid item xs={12} md={6}>
           <Box p={md ? 2 : 4} sx={{ height: md ? 250 : 350, border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}>
             <Typography variant={md ? 'h5' : 'h4'} fontWeight='bold' gutterBottom>
+              <u>New App</u>
+            </Typography>
+            <Typography variant={md ? 'body1' : 'h6'} fontWeight='bold'>
+              A simple news application to search articles on The New York Times. It is hosted on Vercel and you can check it out <Link href='https://news-app-pied-beta.vercel.app/' target='_blank' sx={{ color: 'inherit', '&: hover': {color: 'white'} }}>here</Link>.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Box p={md ? 2 : 4} sx={{ height: md ? 250 : 350, border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}>
+            <Typography variant={md ? 'h5' : 'h4'} fontWeight='bold' gutterBottom>
               <u>Degrees of Seperation</u>
             </Typography>
             <Typography variant={md ? 'body1' : 'h6'} fontWeight='bold'>
