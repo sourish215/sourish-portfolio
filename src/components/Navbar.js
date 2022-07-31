@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Typography, Stack, Link, Drawer, IconButton, List, ListItem, ListItemText } from '@mui/material';
+import { AppBar, Typography, Stack, Link, Drawer, IconButton, List, ListItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -18,7 +18,7 @@ const Navbar = () => {
             sx={{ border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}
             align='center'
           >
-            <Link href="/" underline='none' color='black'>
+            <Link href="/" underline='none' sx={{ fontWeight: 'bold' }} color='secondary'>
               sb.
             </Link>
           </Typography>
@@ -30,7 +30,7 @@ const Navbar = () => {
               underline='hover'   
               color='black'
               sx={{ 
-                fontWeight: 'bold',
+                fontWeight: 'normal',
                 '&:hover' : {
                   color: '#71eeb8',
                 }
@@ -41,7 +41,7 @@ const Navbar = () => {
               underline='hover'   
               color='black'
               sx={{ 
-                fontWeight: 'bold',
+                fontWeight: 'normal',
                 '&:hover' : {
                   color: '#71eeb8',
                 }
@@ -50,7 +50,7 @@ const Navbar = () => {
             <Link variant='h6' href="/resume" underline='hover'   
               color='black'
               sx={{ 
-                fontWeight: 'bold',
+                fontWeight: 'normal',
                 '&:hover' : {
                   color: '#71eeb8',
                 }
@@ -59,7 +59,7 @@ const Navbar = () => {
             <Link variant='h6' href="/about" underline='hover'  
               color='black'
               sx={{ 
-                fontWeight: 'bold',
+                fontWeight: 'normal',
                 '&:hover' : {
                   color: '#71eeb8',
                 }
@@ -68,7 +68,7 @@ const Navbar = () => {
             <Link variant='h6' href="/contact" underline='hover'  
               color='black'
               sx={{ 
-                fontWeight: 'bold',
+                fontWeight: 'normal',
                 '&:hover' : {
                   color: '#71eeb8',
                 }

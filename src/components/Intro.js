@@ -9,16 +9,16 @@ function Intro() {
   const md = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <Stack p={md ? 2 : 6}>
-      <Typography variant='h5' fontWeight='bold' gutterBottom>
+      <Typography variant='h5' fontWeight='normal' gutterBottom>
         Hi there! I&apos;m 
       </Typography>
       <Typography variant={md ? 'h3' : 'h1'} fontWeight='bold' gutterBottom>
         <Typed strings={["Sourish"]} typeSpeed={100} />
       </Typography>
-      <Typography variant={md ? 'h4' : 'h3'} fontWeight='bold' gutterBottom>
+      <Typography variant={md ? 'h4' : 'h3'} fontWeight='medium' gutterBottom>
         I&apos;m a Frontend Developer from Kolkata, India.
       </Typography>
-      <Typography variant={md ? 'h6' : 'h5'} fontWeight='bold' gutterBottom>
+      <Typography variant={md ? 'h6' : 'h5'} fontWeight='normal' gutterBottom>
         I&apos;m currently working as a frontend developer intern for a startup in Bangalore, India.<br />
         I aspire to utilize my skills and interest in software development to contribute to developing purposeful applications.<br /><br />
       </Typography>
