@@ -1,12 +1,47 @@
 import React from 'react';
 import Head from 'next/head';
-import { Typography, Stack, Box, Link, Grid } from '@mui/material';
+import { Typography, Stack, Grid } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import ProjectCard from '../src/components/ProjectCard';
 
 function Projects() {
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.down('md'));
+
+  const projects = [
+    {
+      title: 'This site',
+      description: 'This personal website was designed using NextJs with Material UI. You can find the GitHub link',
+      link: 'https://github.com/sourish215/sourish-portfolio',
+      tech: ''
+    },
+    {
+      title: 'Reading List',
+      description: 'A MERN application to store your reading list. It is hosted on Heroku and you can check it out',
+      link: 'https://my-readinglist-app.herokuapp.com/',
+      tech: 'Tech: MongoDB, ExpressJs, ReactJs, NodeJs, Material UI'
+    },
+    {
+      title: 'News App',
+      description: 'A simple news application to search articles on The New York Times. It is hosted on Vercel and you can check it out',
+      link: 'https://news-app-pied-beta.vercel.app/',
+      tech: 'Tech: ReactJs, Material UI'
+    },
+    {
+      title: 'Degrees of Seperation',
+      description: 'A simple application to find all possible relations between two people. It is hosted on Vercel and you can check it out',
+      link: 'https://degrees-of-seperation-app.vercel.app/',
+      tech: 'Tech: ReactJs, Material UI'
+    },
+    {
+      title: 'Art by Sourish',
+      description: 'My artist portfolio website. It is hosted on Vercel and you can check it out',
+      link: 'https://artbysourish.vercel.app/',
+      tech: 'Tech: NextJs, Material UI'
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -18,72 +53,16 @@ function Projects() {
       >
         <Typography variant={md ? 'h4' : 'h3'} fontWeight='bold' align='center' gutterBottom>Personal Projects</Typography>
         <Grid container direction='row' spacing={md ? 0 : 4} rowSpacing={md ? 2 : 0}>
-          <Grid item xs={12} md={6}>
-            <Box p={md ? 2 : 4} sx={{ height: md ? 280 : 350, border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}>
-              <Typography variant={md ? 'h5' : 'h4'} fontWeight='bold' gutterBottom>
-                <u>This site</u>
-              </Typography>
-              <Typography variant={md ? 'body1' : 'h6'} fontWeight='bold'>
-                This personal website was designed using NextJs with Material UI. You can find the GitHub link <Link href='https://github.com/sourish215/sourish-portfolio' target='_blank' sx={{ color: 'inherit', '&: hover': {color: 'white'} }}>here</Link>.
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Box p={md ? 2 : 4} sx={{ position: 'relative', height: md ? 280 : 350, border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}>
-              <Typography variant={md ? 'h5' : 'h4'} fontWeight='bold' gutterBottom>
-                <u>Reading List</u>
-              </Typography>
-              <Typography variant={md ? 'body1' : 'h6'} fontWeight='bold'>
-                A MERN application to store your reading list. It is hosted on Heroku and you can check it out <Link href='https://my-readinglist-app.herokuapp.com/' target='_blank' sx={{ color: 'inherit', '&: hover': {color: 'white'} }}>here</Link>.
-              </Typography>
-              <div style={{ position: 'absolute', bottom: 0 }}>
-                <Typography variant='h6' pb={4} pr={4} fontWeight='bold' sx={{ fontSize: '1rem' }}>Tech: MongoDB, ExpressJs, ReactJs, NodeJs, Material UI</Typography>
-              </div>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Box p={md ? 2 : 4} sx={{ position: 'relative', height: md ? 280 : 350, border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}>
-              <Typography variant={md ? 'h5' : 'h4'} fontWeight='bold' gutterBottom>
-                <u>News App</u>
-              </Typography>
-              <Typography variant={md ? 'body1' : 'h6'} fontWeight='bold'>
-                A simple news application to search articles on The New York Times. It is hosted on Vercel and you can check it out <Link href='https://news-app-pied-beta.vercel.app/' target='_blank' sx={{ color: 'inherit', '&: hover': {color: 'white'} }}>here</Link>.
-              </Typography>
-              <div style={{ position: 'absolute', bottom: 0 }}>
-                <Typography variant='h1' pb={4} pr={4} fontWeight='bold' sx={{ fontSize: '1rem' }}>Tech: ReactJs, Material UI</Typography>
-              </div>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Box p={md ? 2 : 4} sx={{ position: 'relative', height: md ? 280 : 350, border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}>
-              <Typography variant={md ? 'h5' : 'h4'} fontWeight='bold' gutterBottom>
-                <u>Degrees of Seperation</u>
-              </Typography>
-              <Typography variant={md ? 'body1' : 'h6'} fontWeight='bold'>
-                A simple application to find all possible relations between two people. It is hosted on Vercel and you can check it out <Link href='https://degrees-of-seperation-app.vercel.app/' target='_blank' sx={{ color: 'inherit', '&: hover': {color: 'white'} }}>here</Link>.
-              </Typography>
-              <div style={{ position: 'absolute', bottom: 0 }}>
-                <Typography variant='h1' pb={4} pr={4} fontWeight='bold' sx={{ fontSize: '1rem' }}>Tech: ReactJs, Material UI</Typography>
-              </div>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Box p={md ? 2 : 4} sx={{ position: 'relative', height: md ? 280 : 350, border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}>
-              <Typography variant={md ? 'h5' : 'h4'} fontWeight='bold' gutterBottom>
-                <u>Art by Sourish</u>
-              </Typography>
-              <Typography variant={md ? 'body1' : 'h6'} fontWeight='bold'>
-                My artist portfolio website. It is hosted on Vercel and you can check it out <Link href='https://artbysourish.vercel.app/' target='_blank' sx={{ color: 'inherit', '&: hover': {color: 'white'} }}>here</Link>.
-              </Typography>
-              <div style={{ position: 'absolute', bottom: 0 }}>
-                <Typography variant='h1' pb={4} pr={4} fontWeight='bold' sx={{ fontSize: '1rem' }}>Tech: NextJs, Material UI</Typography>
-              </div>
-            </Box>
-          </Grid>
+          {projects.map((project, index) => {
+              return (
+                <Grid item xs={12} md={6} key={project.link}>
+                  <ProjectCard title={project.title} description={project.description} link={project.link} tech={project.tech} />
+                </Grid>
+              )
+          })}
         </Grid>  
       </Stack>
     </>
-    
   )
 }
 
