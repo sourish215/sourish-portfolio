@@ -23,8 +23,8 @@ function About() {
               float: md ? 'none' : 'right',
               marginLeft: md ? '0' : '50px',
               marginBottom: md ? '32px' : '50px',
-              display: md ? 'flex' : '',
-              justifyContent: md ? 'center' : ''
+              display: md ? 'flex' : 'inline',
+              justifyContent: md ? 'center' : 'initial'
             }}
           >
             <Image src='/profile.jpg' alt='profile'
