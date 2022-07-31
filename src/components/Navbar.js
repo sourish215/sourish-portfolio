@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Typography, Stack, Link, Drawer, IconButton, List, ListItem } from '@mui/material';
+import { AppBar, Typography, Stack, Link, Drawer, IconButton, List, ListItem, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -15,8 +15,15 @@ const Navbar = () => {
       }}>
         <Stack direction='row'>
           <Typography variant='h4' ml={md ? 0 :4} p={1}
-            sx={{ border: '2px solid black', borderRadius: '5px', '&:hover': { backgroundColor: '#71eeb8' } }}
-            align='center'
+            component={Box}
+            height={70}
+            width={70}
+            sx={{
+              fontSize: '1.9rem',
+              border: '2px solid black',
+              borderRadius: '5px',
+              '&:hover': { backgroundColor: '#71eeb8' }
+            }}
           >
             <Link href="/" underline='none' sx={{ fontWeight: 'bold' }} color='secondary'>
               sb.
