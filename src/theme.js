@@ -21,10 +21,6 @@ const theme = createTheme({
     fontFamily: [
       'Roboto Mono',
     ].join(','),
-    h4: {
-      // fontFamily: 'Raleway',
-      fontWeight: 'bold',
-    }
   },
 });
 
