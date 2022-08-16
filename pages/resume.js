@@ -21,16 +21,16 @@ function Resume() {
       >
         <Typography variant={md ? 'h4' : 'h3'} fontWeight='bold' align='center' gutterBottom>Resume</Typography>
         <Typography variant={md ? 'h6' : 'h5'} fontWeight='bold'>
-          Download my resume <Link href='https://drive.google.com/file/d/1qiYq-7SXpRI9IATWFCxuegrUDYlTaSB5/view?usp=sharing' sx={{ color: 'inherit', '&: hover': {color: '#71eeb8'} }}>here</Link>.
+          Download my resume <Link href='https://drive.google.com/file/d/1HyN3pYyaPOLucbKsyE6cZvdEZv1nOIGU/view?usp=sharing' sx={{ color: 'inherit', '&: hover': {color: '#71eeb8'} }}>here</Link>.
         </Typography>
         <Stack spacing={md ? 2 : 4} justifyContent='center'>
-          <Box component={Link} href='#' underline='none' p={md ? 2 : 6} sx={{ width: md ? 300 : 400, height: md ? 150 : 250, border: '2px solid black', borderRadius: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', '&:hover': { backgroundColor: '#71eeb8' } }}>
+          <Box component={Link} href='/education' underline='none' p={md ? 2 : 6} sx={{ width: md ? 300 : 400, height: md ? 150 : 250, border: '2px solid black', borderRadius: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', '&:hover': { backgroundColor: '#71eeb8' } }}>
             <Typography align='center' variant={md ? 'h6' : 'h5'} fontWeight='bold' gutterBottom sx={{ color:'black', }}>
               Education<br /><br />
               <SchoolOutlinedIcon sx={{ fontSize: md ? '40px' : '90px' }} />
             </Typography>
           </Box>
-          <Box component={Link} href='#' underline='none' p={md ? 2 : 6} sx={{ width: md ? 300 : 400, height: md ? 150 : 250, border: '2px solid black', borderRadius: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', '&:hover': { backgroundColor: '#71eeb8' } }}>
+          <Box component={Link} href='/experience' underline='none' p={md ? 2 : 6} sx={{ width: md ? 300 : 400, height: md ? 150 : 250, border: '2px solid black', borderRadius: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', '&:hover': { backgroundColor: '#71eeb8' } }}>
             <Typography align='center' variant={md ? 'h6' : 'h5'} fontWeight='bold' gutterBottom sx={{ color:'black', }}>
               Experience<br /><br />
               <WorkOutlineIcon sx={{ fontSize: md ? '40px' : '90px' }} />
