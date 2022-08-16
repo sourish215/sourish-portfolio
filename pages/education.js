@@ -43,7 +43,6 @@ function Education() {
               '&:hover': { backgroundColor: '#71eeb8' }
             }}
           >
-            <Typography variant='h5' align='center' fontWeight='bold'>Education</Typography>
             <List>
               {education.map((item, index) => {
                 return (
