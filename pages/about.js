@@ -44,7 +44,7 @@ function About() {
             As a React developer intern, I have learnt about <u>React hooks</u>, state management using <u>Redux</u>, <u>lifecycle</u>, <u>agile methodologies</u>, <u>responsive design using Material UI</u>, etc. I am learning NextJs, MongoDB, ExpressJs, and NodeJs in my free time.
           </Typography>
           <Typography paragraph variant={md ? 'h6' : 'body1'} fontWeight='bold' gutterBottom sx={{ fontSize: '1.3rem' }}>
-            I am looking for opportunities to utilize my skills and interest in software development and contribute to the development of purposeful applications.
+            I am looking for opportunities to utilize my skills and interest in software development and contribute to developing purposeful applications.
           </Typography><br />
           <Typography paragraph p={1} variant={md ? 'h6' : 'body1'} fontWeight='bold' gutterBottom sx={{ fontSize: '1.3rem', backgroundColor: '#71eeb8' }}>
             I am also a part-time portrait artist. You can find my artist website <Link href='https://artbysourish.vercel.app/' target='_blank' sx={{ color: 'inherit', '&: hover': {color: 'white'} }}>here</Link>.
