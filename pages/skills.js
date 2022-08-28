@@ -9,7 +9,7 @@ function Skills() {
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.down('md'));
 
-  const techSkills = ['ReactJs', 'Redux', 'JavaScript', 'HTML', ' CSS', 'Materialize UI', 'Git', 'JIRA']
+  const techSkills = ['ReactJs', 'Redux', 'TypeScript', 'JavaScript', 'HTML', ' CSS', 'Materialize UI', 'Git', 'JIRA']
   return (
     <>
        <Head>
