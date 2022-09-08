@@ -38,7 +38,7 @@ function Experience() {
               '&:hover': { backgroundColor: '#71eeb8' }
             }}
           >
-            <Typography variant='h5' align='center' fontWeight='bold'>Frontend Developer Intern</Typography>
+            <Typography variant='h5' align='center' fontWeight='bold'>Frontend Developer Intern at Tradelab Technologies</Typography>
             <Typography variant='body1' align='left' fontWeight='bold'>As a front-end developer intern, my work entails</Typography>
             <List>
               {work.map((item, index) => {
