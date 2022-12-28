@@ -16,30 +16,30 @@ function Projects() {
       link: 'https://github.com/sourish215/sourish-portfolio',
       tech: ''
     },
-    {
-      title: 'Reading List',
-      description: 'A MERN application to store your reading list. It is hosted on Heroku and you can check it out',
-      link: 'https://my-readinglist-app.herokuapp.com/',
-      tech: 'Tech: MongoDB, ExpressJs, ReactJs, NodeJs, Material UI'
-    },
-    {
-      title: 'News App',
-      description: 'A simple news application to search articles on The New York Times. It is hosted on Vercel and you can check it out',
-      link: 'https://news-app-pied-beta.vercel.app/',
-      tech: 'Tech: ReactJs, Material UI'
-    },
-    {
-      title: 'Degrees of Seperation',
-      description: 'A simple application to find all possible relations between two people. It is hosted on Vercel and you can check it out',
-      link: 'https://degrees-of-seperation-app.vercel.app/',
-      tech: 'Tech: ReactJs, Material UI'
-    },
-    {
-      title: 'Art by Sourish',
-      description: 'My artist portfolio website. It is hosted on Vercel and you can check it out',
-      link: 'https://artbysourish.vercel.app/',
-      tech: 'Tech: NextJs, Material UI'
-    },
+    // {
+    //   title: 'Reading List',
+    //   description: 'A MERN application to store your reading list. It is hosted on Heroku and you can check it out',
+    //   link: 'https://my-readinglist-app.herokuapp.com/',
+    //   tech: 'Tech: MongoDB, ExpressJs, ReactJs, NodeJs, Material UI'
+    // },
+    // {
+    //   title: 'News App',
+    //   description: 'A simple news application to search articles on The New York Times. It is hosted on Vercel and you can check it out',
+    //   link: 'https://news-app-pied-beta.vercel.app/',
+    //   tech: 'Tech: ReactJs, Material UI'
+    // },
+    // {
+    //   title: 'Degrees of Seperation',
+    //   description: 'A simple application to find all possible relations between two people. It is hosted on Vercel and you can check it out',
+    //   link: 'https://degrees-of-seperation-app.vercel.app/',
+    //   tech: 'Tech: ReactJs, Material UI'
+    // },
+    // {
+    //   title: 'Art by Sourish',
+    //   description: 'My artist portfolio website. It is hosted on Vercel and you can check it out',
+    //   link: 'https://artbysourish.vercel.app/',
+    //   tech: 'Tech: NextJs, Material UI'
+    // },
   ];
 
   return (
